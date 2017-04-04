@@ -61,6 +61,7 @@ print("/= operator num1 has changed value to ", num1)
 num1 %= num2
 print("%= operator num1 has changed value to ", num1)
 
+print("======= Logical Operators ==========")
 bool1 = True
 bool2 = False
 
