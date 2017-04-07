@@ -29,3 +29,15 @@ print("Last but one 3 characters in the PAN card:",pancard_number[-4:-1])
 
 pancard_number[2]="A" #This line will result in an error, i.e., string is immutable
 print(pancard_number)
+
+# Built in Functions for String
+flightname = "Air India"
+flightname.count("a")
+flightname.replace("A", "a")
+flightname.find("a")
+flightname.startswith("Ai")
+flightname.endswith("ia")
+flightname.isdigit()
+flightname.upper()
+flightname.lower()
+flightname.split("a")
