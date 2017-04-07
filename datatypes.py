@@ -11,3 +11,7 @@ print('Complex ', complex_type, ' has datatype', type(complex_type))
 print('Float ', float_type, ' has datatype', type(float_type))
 print('String ', string_type, ' has datatype', type(string_type))
 print('Boolean ', boolean_type, ' has datatype', type(boolean_type))
+
+# Checking the datatype
+if type(int_type) is int:
+    print("int_type variable is actually int")
