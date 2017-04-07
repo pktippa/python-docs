@@ -42,3 +42,14 @@ def vending_machine(name, *item_code_tuple):
 
 vending_machine("Uday",12,15,13)
 vending_machine("Raj",12,11)
+
+print()
+# Recursion
+def sumFunc(elem):
+    total = 0
+    if elem == 0:
+        return 0
+    else:
+        return elem + sumFunc(elem-1)
+
+print("Sum func ", sumFunc(10))
