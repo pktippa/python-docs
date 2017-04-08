@@ -37,3 +37,12 @@ print("Element in a list in a list", airline_details[2][1])
 
 # Initializing List with initial values with a defined length
 my_list = [0]*10 # creates a list with ten elements each having value as zero
+
+num_list = [10,20,30,40,50]
+num_list.append(60) #Adds an element to end of list
+num_list.index(10) # Returns the index position of the element.
+num_list.insert(3,60) # Inserts an element at a given position
+num_list.pop(3) # Removes and returns the element at given index position from the list
+num_list.remove(30) # Removes the first occurring element whose value is 30
+num_list.sort() # Sorts the list in ascending order
+num_list.reverse() # Reverses the list
