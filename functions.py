@@ -53,3 +53,6 @@ def sumFunc(elem):
         return elem + sumFunc(elem-1)
 
 print("Sum func ", sumFunc(10))
+
+# Functions are first class citizens
+# Functions can be used for assignment, parameters, return types, etc.
