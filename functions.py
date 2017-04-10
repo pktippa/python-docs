@@ -56,3 +56,17 @@ print("Sum func ", sumFunc(10))
 
 # Functions are first class citizens
 # Functions can be used for assignment, parameters, return types, etc.
+
+# Function should be defined before using/calling it. If not it will give error.
+try:
+    callingFunction() # This will throw name error since the function is not defined yet and we are trying to execute it.
+except:
+    print("Error in calling function with out declaring it first")
+    
+def callingFunction():
+    print("Hello World")
+
+def anotherFunction():
+    print("Another Function")
+
+anotherFunction()
