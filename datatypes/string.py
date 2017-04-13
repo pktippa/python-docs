@@ -27,8 +27,8 @@ else:
 print("The numbers in the PAN card number:", pancard_number[5:9])
 print("Last but one 3 characters in the PAN card:",pancard_number[-4:-1])
 
-pancard_number[2]="A" #This line will result in an error, i.e., string is immutable
-print(pancard_number)
+# pancard_number[2]="A" #This line will result in an error, i.e., string is immutable
+# print(pancard_number)
 
 # Built in Functions for String
 flightname = "Air India"
@@ -41,3 +41,9 @@ flightname.isdigit()
 flightname.upper()
 flightname.lower()
 flightname.split("a")
+
+# Multiple value mapping using split
+given_string = "1 2 3 4 5"
+first_num, *rest_of_nums_in_str = given_string.split()
+rest_of_nums_in_int = list(map(int, rest_of_nums_in_str))
+print(rest_of_nums_in_int)

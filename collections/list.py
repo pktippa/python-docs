@@ -51,3 +51,12 @@ num_list.reverse() # Reverses the list
 string = "1 2 3 4 5"
 to_list_in_int = list(map(int, string.split())) # This will map string to int conversion automatically.
 print(to_list_in_int)
+
+# List Compression
+# https://www.hackerrank.com/challenges/list-comprehensions
+ListOfNumbers = [ x for x in range(10) ] # List of integers from 0 to 9
+print("list of numbers ", ListOfNumbers)
+
+# We can also add if clause 
+ListOfThreeMultiples = [x for x in range(10) if x % 2 == 0]
+print(ListOfThreeMultiples)
