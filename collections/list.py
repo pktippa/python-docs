@@ -60,3 +60,8 @@ print("list of numbers ", ListOfNumbers)
 # We can also add if clause 
 ListOfThreeMultiples = [x for x in range(10) if x % 2 == 0]
 print(ListOfThreeMultiples)
+
+# Converting List of String to concat to single String
+list_str = ["Train", "running", "late"]
+joined_str_from_list = " ".join(list_str)
+print(joined_str_from_list)
