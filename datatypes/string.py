@@ -47,3 +47,8 @@ given_string = "1 2 3 4 5"
 first_num, *rest_of_nums_in_str = given_string.split()
 rest_of_nums_in_int = list(map(int, rest_of_nums_in_str))
 print(rest_of_nums_in_int)
+
+print("=======================")
+upper_lower_str = "AbC"
+for s in upper_lower_str:
+    print(s.isupper()) # String .isupper() returns if the character is upper or lower.
