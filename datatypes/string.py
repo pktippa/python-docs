@@ -52,3 +52,9 @@ print("=======================")
 upper_lower_str = "AbC"
 for s in upper_lower_str:
     print(s.isupper()) # String .isupper() returns if the character is upper or lower.
+
+print("=========== Find Method ============")
+string = "abcdabcd"
+first_occurence_of_ab = string.find("ab") # Find always returns the first occurence of str if not index provided.
+second_occurence_of_ab = string.find("ab", first_occurence_of_ab+1) # If you want to find the next occurence we can pass the index as (first occurence index + 1).
+print("first ab ", first_occurence_of_ab , " second ab ", second_occurence_of_ab)
