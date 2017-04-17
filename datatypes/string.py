@@ -37,7 +37,7 @@ flightname.replace("A", "a")
 flightname.find("a")
 flightname.startswith("Ai")
 flightname.endswith("ia")
-flightname.isdigit()
+flightname.isdigit() # Checks whether the string contains all digits.
 flightname.upper()
 flightname.lower()
 flightname.split("a")
@@ -58,3 +58,6 @@ string = "abcdabcd"
 first_occurence_of_ab = string.find("ab") # Find always returns the first occurence of str if not index provided.
 second_occurence_of_ab = string.find("ab", first_occurence_of_ab+1) # If you want to find the next occurence we can pass the index as (first occurence index + 1).
 print("first ab ", first_occurence_of_ab , " second ab ", second_occurence_of_ab)
+
+string.isalnum() # Checks whether the string contains all alphabets or numbers
+string.isalpha() # Checks whether the string contains all alphabets or not.
