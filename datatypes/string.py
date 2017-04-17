@@ -75,3 +75,9 @@ print("======= Text Wrap / Fill =========")
 import textwrap
 print(textwrap.wrap(string,3)) # The wrap() function wraps a single paragraph in text (a string) so that every line is width characters long at most. 
 print(textwrap.fill(string,4)) # The fill() function wraps a single paragraph in text and returns a single string containing the wrapped paragraph.
+
+print("======= String Formatting =========")
+print('{: >{}}'.format("ss", 3))# Prints
+#   ss
+print('{: <{}}'.format("ss", 3)+"another string") # Prints
+# ss  another string.
