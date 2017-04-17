@@ -70,3 +70,8 @@ width = 20
 print('HackerRank'.center(width,'-'))
 print('HackerRank'.ljust(width,'-'))
 print('HackerRank'.rjust(width,'-'))
+
+print("======= Text Wrap / Fill =========")
+import textwrap
+print(textwrap.wrap(string,3)) # The wrap() function wraps a single paragraph in text (a string) so that every line is width characters long at most. 
+print(textwrap.fill(string,4)) # The fill() function wraps a single paragraph in text and returns a single string containing the wrapped paragraph.
