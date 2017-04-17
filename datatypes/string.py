@@ -61,3 +61,12 @@ print("first ab ", first_occurence_of_ab , " second ab ", second_occurence_of_ab
 
 string.isalnum() # Checks whether the string contains all alphabets or numbers
 string.isalpha() # Checks whether the string contains all alphabets or not.
+
+# str.ljust(width) returns left aligned string of length width
+# str.center(width) returns a centered string of length width.
+# str.rjust(width) returns a right aligned string of length width.
+print("======= Text Alignment =========")
+width = 20
+print('HackerRank'.center(width,'-'))
+print('HackerRank'.ljust(width,'-'))
+print('HackerRank'.rjust(width,'-'))
