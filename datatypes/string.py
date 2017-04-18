@@ -81,3 +81,7 @@ print('{: >{}}'.format("ss", 3))# Prints
 #   ss
 print('{: <{}}'.format("ss", 3)+"another string") # Prints
 # ss  another string.
+
+# Split the string with empty separator
+string = "abcd"
+string_with_empty_separated = list(string)

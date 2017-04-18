@@ -65,3 +65,6 @@ print(ListOfThreeMultiples)
 list_str = ["Train", "running", "late"]
 joined_str_from_list = " ".join(list_str)
 print(joined_str_from_list)
+
+# To Get the reversed list
+print(list(reversed(list_str)))
