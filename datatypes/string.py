@@ -85,3 +85,6 @@ print('{: <{}}'.format("ss", 3)+"another string") # Prints
 # Split the string with empty separator
 string = "abcd"
 string_with_empty_separated = list(string)
+
+# Capitalizing a string
+print(string.capitalize()) # Automatically capitalizes.
