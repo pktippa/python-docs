@@ -28,3 +28,11 @@ b = {2, 4, 11, 12}
 a.union(b) # Values which exist in a or b
 a.intersection(b) # Values which exist in a and b
 a.difference(b) # Values which exist in a but not in b
+
+# Check element existence in Set
+el = 4
+if el in a:
+    print('element exists ', el)
+
+# Intializing an empty Set
+empty_set = set([])
