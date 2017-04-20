@@ -36,3 +36,10 @@ if el in a:
 
 # Intializing an empty Set
 empty_set = set([])
+
+# .pop() operation removes and return an arbitrary element from the set.
+# If there are no elements to remove, it raises a KeyError.
+ret_el = a.pop()
+
+# We can directly call sum() function on set to get the sum of all elements.
+sum_of_elements_of_a = sum(a) 
