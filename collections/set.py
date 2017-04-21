@@ -47,3 +47,13 @@ sum_of_elements_of_a = sum(a)
 
 # Get the count of number of elements in the Set
 set_elements_count = len(a)
+
+# Set Mutations
+# .update() or |=
+a.update(b) # Which will add elements of b into a i.e update elements of a with b.
+# .intersection_update() or &=
+a.intersection_update(b) # Same as intersection but it will update the elements of a.
+# .difference_update() or -=
+a.difference_update(b) # Same as difference but it will update the elements of a.
+# .symmetric_difference_update() or ^=
+a.symmetric_difference_update(b) # Same as symmetric_difference but it will update the elements of a.
