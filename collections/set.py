@@ -57,3 +57,9 @@ a.intersection_update(b) # Same as intersection but it will update the elements 
 a.difference_update(b) # Same as difference but it will update the elements of a.
 # .symmetric_difference_update() or ^=
 a.symmetric_difference_update(b) # Same as symmetric_difference but it will update the elements of a.
+
+# Checking whether set A is subset of B
+a.issubset(b)
+
+# Checking whether set A is superset of B
+a.issuperset(b)
