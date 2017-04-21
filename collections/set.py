@@ -25,9 +25,10 @@ unique_passengers.remove("George")
 
 a = {2, 4, 5, 9}
 b = {2, 4, 11, 12}
-a.union(b) # Values which exist in a or b
-a.intersection(b) # Values which exist in a and b
-a.difference(b) # Values which exist in a but not in b
+a.union(b) # Values which exist in a or b, we can also use a | b
+a.intersection(b) # Values which exist in a and b, we can also use a & b
+a.difference(b) # Values which exist in a but not in b, we can also use a - b
+a.symmetric_difference(b) # Values of a and b but not common to both. we can also use a ^ b
 
 # Check element existence in Set
 el = 4
@@ -43,3 +44,6 @@ ret_el = a.pop()
 
 # We can directly call sum() function on set to get the sum of all elements.
 sum_of_elements_of_a = sum(a) 
+
+# Get the count of number of elements in the Set
+set_elements_count = len(a)
