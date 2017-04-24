@@ -73,3 +73,7 @@ print("Logical 'or' operator between bool1 and bool2 ", bool3)
 
 bool3 = not bool1
 print("Logical 'not' operator on bool1", bool3)
+
+# Power of shortcut
+x = 4
+print(4**3) # Returns 64 i.e. 4*4*4 or 4 power of 3
