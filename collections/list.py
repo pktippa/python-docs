@@ -68,3 +68,7 @@ print(joined_str_from_list)
 
 # To Get the reversed list
 print(list(reversed(list_str)))
+
+int_list = [1,3,5,7]
+# Printing the List elements with space separated 
+print(*int_list)

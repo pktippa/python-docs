@@ -6,9 +6,13 @@
 
 sample_tuple = ("Denver", "Knight", "Larson")
 # () are optional, a set of values separated by comma is also considered to be a tuple.
-print("Second element in ", sample_tuple[1])
+print("Second element in ", sample_tuple[1]) # Returns Knight
 
 # Addition in tuples
 tuple1 = (3,4,5)
 tuple2 = tuple1 + (8,9) # We can also assign it to tuple1 which will override previous tuple.
-print(tuple2)
+print(tuple2) # Prints (3, 4, 5, 8, 9)
+
+# Convert tuple of characters into string
+str_tuple = ('R','o','y')
+print(''.join(str_tuple)) # Prints Roy

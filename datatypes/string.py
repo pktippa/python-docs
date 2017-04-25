@@ -88,3 +88,8 @@ string_with_empty_separated = list(string)
 
 # Capitalizing a string
 print(string.capitalize()) # Automatically capitalizes.
+
+# Lexicographic order
+non_ordered_str = 'MalcBAdCLo'
+# Prints AaBCcdLlMo
+print(''.join(sorted(sorted(non_ordered_str), key=str.upper)))
