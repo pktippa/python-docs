@@ -30,3 +30,16 @@ def prime():
 # map the inputs to the function blocks, or building dictionary
 options = {'zero' : zero, 'prime': prime}
 options['zero']()  # Invoking the particular function and execute it.
+
+# Counter increment for if condition can be written easily
+num = 0
+string = 'abc'
+# Directly increment with if condition 
+num += 'a' in string
+# Since number increments by 1 , prints Number 1
+print("Number ", num)
+
+num += 'd' in string
+# Since d is not there in string, num will not be incremented since it returns 0
+# So it prints again Number 1
+print("Number ", num)
