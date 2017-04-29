@@ -30,3 +30,8 @@ input_string = '1222311'
 # Prints 1 ['1'] 2 ['2', '2', '2'] 3 ['3'] 1 ['1', '1'] 
 for k, g in groupby(input_string):
     print(k, list(g), end=" ") # Here k is also string
+
+# Working on cartesian product with list of lists, we can use *list
+list_of_lists = [[1,2,4],[4,5],[7]]
+# Prints [(1, 4, 7), (1, 5, 7), (2, 4, 7), (2, 5, 7), (4, 4, 7), (4, 5, 7)]
+print('\n',list(product(*list_of_lists)))
