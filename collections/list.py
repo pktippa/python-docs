@@ -72,3 +72,8 @@ print(list(reversed(list_str)))
 int_list = [1,3,5,7]
 # Printing the List elements with space separated 
 print(*int_list)
+
+# To check list is empty or not.
+empty_list = []
+if not empty_list:
+    print("list is empty")
