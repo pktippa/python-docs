@@ -1,5 +1,5 @@
 # importing required functions from collections
-from collections import Counter, defaultdict, namedtuple
+from collections import Counter, defaultdict, namedtuple, OrderedDict
 
 # collections.Counter() 
 # A counter is a container that stores elements as dictionary keys, 
@@ -55,3 +55,21 @@ print(xyz)
 # We can also access indivudual properties of object
 # xyz.Class returns Y, so prints Y
 print(xyz.Class)
+
+# collections.OrderedDict
+# An OrderedDict is a dictionary that remembers the order of the keys that were 
+# inserted first. If a new entry overwrites an existing entry, the original insertion 
+# position is left unchanged.
+ordered_dictionary = OrderedDict()
+ordered_dictionary['a'] = 1
+ordered_dictionary['b'] = 2
+ordered_dictionary['c'] = 3
+# We can use .get('el', default_value) to get or initialize a value if not exists.
+ordered_dictionary['d'] = ordered_dictionary.get('d', 5)
+# Prints OrderedDict([('a', 1), ('b', 2), ('c', 3), ('d', 5)])
+print(ordered_dictionary)
+# we can loop through elements in OrderedDict using OrderedDict.keys() value by OrderedDict[key]
+string = "pradeep"
+# we can get the unique characters of a string using OrderedDict preserving the order.
+# Prints prade
+print(''.join(OrderedDict.fromkeys(string).keys()))
