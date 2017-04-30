@@ -1,5 +1,5 @@
 # importing required functions from collections
-from collections import Counter, defaultdict, namedtuple, OrderedDict
+from collections import Counter, defaultdict, namedtuple, OrderedDict, deque
 
 # collections.Counter() 
 # A counter is a container that stores elements as dictionary keys, 
@@ -73,3 +73,46 @@ string = "pradeep"
 # we can get the unique characters of a string using OrderedDict preserving the order.
 # Prints prade
 print(''.join(OrderedDict.fromkeys(string).keys()))
+
+# collections.deque()
+# A deque is a double-ended queue. It can be used to add or remove elements from both ends.
+# Deques support thread safe, memory efficient appends and pops from either side of the deque
+# with approximately the same O(1) performance in either direction.
+d = deque()
+d.append(1)
+# Prints deque([1])
+print(d)
+d.appendleft(2)
+# Prints deque([2, 1])
+print(d)
+d.clear()
+# Prints deque([])
+print(d)
+d.extend('1')
+# Prints deque(['1'])
+print(d)
+d.extendleft('234')
+# Prints deque(['4', '3', '2', '1'])
+print(d)
+# Returns 1
+d.count('1')
+# Returns '1'
+d.pop()
+# Prints deque(['4', '3', '2'])
+print(d)
+# Returns '4'
+d.popleft()
+# Prints deque(['3', '2'])
+print(d)
+d.extend('7896')
+# Prints deque(['3', '2', '7', '8', '9', '6'])
+print(d)
+d.remove('2')
+# Prints deque(['3', '7', '8', '9', '6'])
+print(d)
+d.reverse()
+# Prints deque(['6', '9', '8', '7', '3'])
+print(d)
+d.rotate(3)
+# Prints deque(['8', '7', '3', '6', '9'])
+print(d)
