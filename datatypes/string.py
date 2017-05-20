@@ -93,3 +93,16 @@ print(string.capitalize()) # Automatically capitalizes.
 non_ordered_str = 'MalcBAdCLo'
 # Prints AaBCcdLlMo
 print(''.join(sorted(sorted(non_ordered_str), key=str.upper)))
+
+# Replace two things at a time.
+str_double_replacements = "abbaab"
+# %temp% can be replaced with any character which is not in original string.
+str_double_replacements = str_double_replacements.replace('a', '%temp%').replace('b', 'a').replace('%temp%', 'b')
+print("After double replacements - ", str_double_replacements)
+
+l = ['s', 'A', 'd']
+y = 45
+x = 5.999
+str(l)
+str(y)
+str(x)
