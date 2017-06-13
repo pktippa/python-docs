@@ -77,3 +77,10 @@ print(*int_list)
 empty_list = []
 if not empty_list:
     print("list is empty")
+
+# element-wise multiplication/product of two lists in Python 
+lisA = [1, 2, 3, 4]
+lisB = [5, 6, 7, 8]
+elmntsPrdAnB = [a*b for a,b in zip(lisA,lisB)]
+# Returns [5, 12, 21, 32]
+print(elmntsPrdAnB)
