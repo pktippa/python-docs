@@ -77,3 +77,6 @@ print("Logical 'not' operator on bool1", bool3)
 # Power of shortcut
 x = 4
 print(4**3) # Returns 64 i.e. 4*4*4 or 4 power of 3
+
+# Ternary operator
+# a if condition else b
