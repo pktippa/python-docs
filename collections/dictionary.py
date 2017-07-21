@@ -25,3 +25,15 @@ crew_details.update({"Flight Attendant":"Jane", "Co-pilot":"Henry"}) # Updates t
 
 # Get default value if the key,value pair doesnt exists
 chef_name = crew_details.get('chef', 'Robin')
+
+# Creating an empty dictionary
+emptyDict = dict()
+
+# Finding key by value
+var_dict = {
+    'kumar': 29,
+    'harshit': 30
+}
+for name, age in var_dict.items():
+    if age == 30:
+        print(name)
