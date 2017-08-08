@@ -84,3 +84,16 @@ lisB = [5, 6, 7, 8]
 elmntsPrdAnB = [a*b for a,b in zip(lisA,lisB)]
 # Returns [5, 12, 21, 32]
 print(elmntsPrdAnB)
+
+# We can modify multiple continuous elements at once
+list_to_modify = [1, 2, 3, 4]
+list_to_modify[0:2] = [5, 6]
+# Prints [5, 6, 3, 4]
+print(list_to_modify)
+
+# Deleting elements in List
+list_to_del_el = [1, 2, 3, 4]
+# same as list_to_del_el.pop(1), where as pop will returns the removed element from list
+del(list_to_del_el[1])
+# Prints [1, 3, 4]
+print(list_to_del_el)
