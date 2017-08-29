@@ -35,3 +35,44 @@ print(two_d_array.shape)
 print(two_d_array[:,2])
 # To get values [6, 7]
 print(two_d_array[1,1:3])
+
+# Reshape
+org_array = [1, 2, 3, 4, 5, 6, 7, 8]
+conv_np_array = np.array(org_array)
+# Returns (8,) as shape
+print('Shape ', conv_np_array.shape)
+# Converting into shape of (2,4)
+conv_2_4_array = np.reshape(conv_np_array, [2, 4])
+# Returns (2, 4) as shape
+print('Shape ', conv_2_4_array.shape)
+# Prints [[1 2 3 4], [5 6 7 8]]
+print('Element of conv_2_4_array', conv_2_4_array)
+# Converting into shape of (2, 2, 2)
+conv_2_2_2_array = np.reshape(conv_np_array, [2, 2, 2])
+# Returns (2, 2, 2) as shape
+print('Shape ', conv_2_2_2_array.shape)
+# Prints
+"""
+[[[1 2]
+  [3 4]]
+
+ [[5 6]
+  [7 8]]]
+"""
+print('Element of conv_2_2_2_array', conv_2_2_2_array)
+
+# The shape will convert [row1, row2, ....rown-1, col]
+# If we want to have single row with elements just 1 or -1 to the top of the shape list.
+
+# Converting into shape of (1, 2, 2, 2)
+conv_1_2_2_2_array = np.reshape(conv_np_array, [-1, 2, 2, 2])
+# Returns (1, 2, 2, 2) as shape, even if we gave first dimension of shape as -1
+print('Shape ', conv_1_2_2_2_array.shape)
+"""
+[[[[1 2]
+   [3 4]]
+
+  [[5 6]
+   [7 8]]]]
+"""
+print('Element of conv_1_2_2_2_array', conv_1_2_2_2_array)
