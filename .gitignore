@@ -92,3 +92,5 @@ ENV/
 .vscode
 
 temp.py
+
+.project
