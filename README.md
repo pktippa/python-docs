@@ -1,4 +1,7 @@
-# Python Basics
+# Python Docs
+
+1. [Basics](basics/README.md)
+2. [Anaconda](anaconda/README.md)
 
 ## Best practices
 
