@@ -1,5 +1,7 @@
 # Python Basics
 
+* [Email](email/README.md)
+
 ### PIP
 
 #### PIP Behind Proxy
