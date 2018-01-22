@@ -1,6 +1,6 @@
 # PIP
 
-##PIP Behind Proxy
+## PIP Behind Proxy
 
 ```sh
 $ pip install --proxy user:pass@proxyhost:proxyport
