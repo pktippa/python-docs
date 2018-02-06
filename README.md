@@ -6,3 +6,10 @@
 ## Best practices
 
 1. If there are unique elements and wanted to check the element existence its always best to go for `set` than `list`
+
+## FAQ
+
+* Get the particular version of a module using by python environment, check this [query](https://stackoverflow.com/questions/20180543)
+  *   ```sh
+      $ pip freeze | grep <moudle_name>
+      ```
