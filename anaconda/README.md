@@ -16,7 +16,26 @@ If anaconda is Installed in `D:\softs\anaconda3`
 
 Have the `.condarc` file in USER Home directory.
 
-TODO
+with below content, with the changed proxy settings and save it.
+
+```txt
+channels:
+  - conda-forge
+  - defaults
+
+# Show channel URLs when displaying what is going to be downloaded and
+# in 'conda list'. The default is False.
+show_channel_urls: true
+allow_other_channels: true
+
+proxy_servers:
+  http: http://proxy_username:proxy_password@proxy_host:proxy_port
+  https: http://proxy_username:proxy_password@proxy_host:proxy_port
+
+
+ssl_verify: false
+
+```
 
 ## Setting up new Environment
 
@@ -42,6 +61,12 @@ $ source activate newenv
 
 ```sh
 $ conda list
+```
+
+### Installing packages from file
+
+```sh
+$ conda install -y --file <file_name>
 ```
 
 ### Deactivating the environment
