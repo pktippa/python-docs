@@ -17,3 +17,7 @@
   *   ```sh
       $ pip freeze | grep <moudle_name>
       ```
+
+## Issues and Resolutions
+
+[Here](issues.md)
