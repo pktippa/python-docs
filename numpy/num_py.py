@@ -76,3 +76,62 @@ print('Shape ', conv_1_2_2_2_array.shape)
    [7 8]]]]
 """
 print('Element of conv_1_2_2_2_array', conv_1_2_2_2_array)
+
+# Perform an operation on each element of array
+"""
+import math
+import numpy as np
+
+def calcSigmoid(z):
+    return 1 / ( 1 + math.exp(-z) )
+
+def sigm(X):
+    sm = np.vectorize(calcSigmoid)
+    return sm(X)
+
+sigm([1,0])
+array([0.73105858, 0.5       ])
+"""
+
+# Adding columns
+
+first = np.array([[1,3], [2,4]])
+'''
+array([[1, 2],
+       [3, 4]])
+'''
+
+sec = np.array([[5],[6]])
+'''
+array([[5],
+       [6]])
+'''
+
+# on column concat
+third = np.concatenate((first, sec), axis=1)
+'''
+array([[1, 2, 5],
+       [3, 4, 6]])
+'''
+
+# Get the scalar value of (1,1) matrix
+in_vec = np.array([[5]])
+'''
+array([[5]])
+'''
+in_vec.shape # (1, 1)
+in_scalar = np.asscalar(in_vec) # 5
+
+# identity matrix
+eye = np.eye(3)
+'''
+array([[1., 0., 0.],
+       [0., 1., 0.],
+       [0., 0., 1.]])
+'''
+
+# Reading csv file
+'''
+from numpy import genfromtxt
+my_data = genfromtxt('my_file.csv', delimiter=',')
+'''
