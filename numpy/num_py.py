@@ -135,3 +135,48 @@ array([[1., 0., 0.],
 from numpy import genfromtxt
 my_data = genfromtxt('my_file.csv', delimiter=',')
 '''
+
+'''
+X = np.arange(1,7)
+#array([1, 2, 3, 4, 5, 6])
+X = X.reshape(3, 2)
+
+array([[1, 2],
+       [3, 4],
+       [5, 6]])
+
+If we see the elements arranged in filling first rows by rows
+If we want to fill by columns first, i.e
+
+array([[1, 4],
+       [2, 5],
+       [3, 6]])
+
+
+We can do in two ways
+
+1. First take the order in reverse then transpose
+
+X = np.arange(1,7).reshape(2,3) # Observe 2,3 rather thn 3,2
+X = X.T
+
+2. Chaining with swapaxes
+
+X = np.arange(1,7).reshape(2,3).swapaxes(0,1)
+'''
+
+'''
+Indexing from particular index to end
+mm = np.arange(1,5).reshape(2,2)
+mm
+array([[1, 2],
+       [3, 4]])
+nn = mm.flatten().reshape((4,1))
+array([[1],
+       [2],
+       [3],
+       [4]])
+# From index 2 to end
+nn[2:,]
+array([[3],
+       [4]])
